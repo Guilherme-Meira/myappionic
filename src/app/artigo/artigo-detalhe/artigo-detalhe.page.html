@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalhe do Artigo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+  <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{ artigo.data }}</ion-card-subtitle>
+          <ion-card-title>{{ artigo.titulo}}</ion-card-title>
+        </ion-card-header>
+      <img src="{{ artigo.imgUrl }}">
+        <ion-card-content>
+          <div [innerHTML]="artigo.texto"></div>
+        </ion-card-content>
+      <p>{{ artigo.autor }}</p>
+      </ion-card>
+       
+   
+  
+</ion-content>
