@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
 
   <ion-list>
-    <button ion-item *ngFor="let artigo of artigos">
+    <button ion-item *ngFor="let artigo of artigos" (click)="abrirArtigo(artigo)">
 
 
       <ion-card>
